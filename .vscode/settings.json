@@ -1,0 +1,29 @@
+{
+  "cSpell.words": [
+    "Sider",
+    "antd",
+    "banbrick",
+    "browserslist",
+    "commandline",
+    "contenthash",
+    "devtool",
+    "devtools",
+    "downlevel",
+    "esnext",
+    "middlewares",
+    "multiline",
+    "nestjs",
+    "ngrx",
+    "parens",
+    "polyfill",
+    "preloaders",
+    "prerendering",
+    "quotemark",
+    "tslib",
+    "tspaths",
+    "webapp"
+  ],
+  "files.associations": {
+    ".env-cmdrc": "json"
+  }
+}

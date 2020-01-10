@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "outDir": "./build ",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "downlevelIteration": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitThis": false,
+    "noUnusedLocals": false,
+    "noImplicitReturns": false,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "exclude": ["node_modules", "build"],
+  "extends": "./config/tspaths.json"
+}
