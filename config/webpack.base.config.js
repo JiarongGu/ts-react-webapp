@@ -42,14 +42,6 @@ module.exports = {
           'css-hot-loader',
           'css-type-loader',
           {
-            loader: 'postcss-loader',
-            options: {
-              config: {
-                path: __dirname,
-              },
-            },
-          },
-          {
             loader: 'css-loader',
             options: {
               modules: {
@@ -58,6 +50,14 @@ module.exports = {
               localsConvention: 'camelCase',
               sourceMap: true,
               importLoaders: 1,
+            },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: paths.postcss,
+              },
             },
           },
           {

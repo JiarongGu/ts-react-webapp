@@ -6,16 +6,19 @@ import { Router } from 'react-router';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { SinkFactory } from 'redux-sink';
 
+import { App } from '@containers/app';
+import { homeRoutes } from '@containers/home';
+
 import { BreakpointSink, RouteSink } from '@shared/sinks';
+
+import '@shared/styles/reset.css';
 
 const store = SinkFactory.createStore({
   useTrigger: true,
   devToolOptions: { devToolCompose: composeWithDevTools },
 });
 
-const history = RouteSink.createHistory([
-
-]);
+const history = RouteSink.createHistory([homeRoutes]);
 
 BreakpointSink.createListener(window);
 
@@ -23,7 +26,7 @@ ReactDOM.render(
   <AppHotContainer>
     <Provider store={store}>
       <Router history={history}>
-        <div>Test </div>
+        <App />
       </Router>
     </Provider>
   </AppHotContainer>,
